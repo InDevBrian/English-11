@@ -1,0 +1,41 @@
+{
+  "name": "english-11",
+  "version": "1.0.0",
+  "description": "Enligh 11 Final Project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InDevBrian/English-11.git"
+  },
+  "author": "Brian Gill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InDevBrian/English-11/issues"
+  },
+  "homepage": "https://github.com/InDevBrian/English-11#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/css": "^10.0.12",
+    "@emotion/styled": "^10.0.12",
+    "emotion": "^10.0.9",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11"
+  }
+}
