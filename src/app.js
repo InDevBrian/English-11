@@ -1,16 +1,25 @@
 import React, { Component} from "react";
 import {hot} from "react-hot-loader";
+import styled from '@emotion/styled'
 import Textbox from "./components/Textbox/Textbox"
 import Header from "./components/Header/Header"
+
+const Container = styled.div`
+  margin: 12px;
+`
 
 class App extends Component{
   render(){
     return(
-      <div>
+      <Container>
         <Header />
-        <h1>The App</h1>
         <Textbox />
-      </div>
+        <Textbox />
+        <Textbox />
+        <Textbox />
+        <Textbox />
+        <Textbox />
+      </Container>
     );
   }
 }
