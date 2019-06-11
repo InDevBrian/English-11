@@ -7,7 +7,7 @@ class Header extends Component{
       <Container>
         <Container.Header>
           <h1>
-            Header Text!
+            Header xt!
           </h1>
         </Container.Header>
       </Container>
