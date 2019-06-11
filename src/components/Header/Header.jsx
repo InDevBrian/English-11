@@ -5,11 +5,11 @@ class Header extends Component{
   render(){
     return(
       <Container>
-        <Container.Header>
-          <h1>
-            Header xt!
-          </h1>
-        </Container.Header>
+        <Container.Inner>
+          <Container.Inner.Title>
+            Canadian Tuition Costs
+          </Container.Inner.Title>
+        </Container.Inner>
       </Container>
     );
   }

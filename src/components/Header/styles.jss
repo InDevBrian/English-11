@@ -1,9 +1,13 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-  width: 100%;
+  margin: 6px;
+  background-color: rgba(110, 110, 110, 0.2);
 `
 
-Container.Header = styled.header`
-  background-color: rgba(110, 110, 110, 0.2);
+Container.Inner = styled.div`
+  margin: 12px;
+`
+
+Container.Inner.Title = styled.h1`
 `
