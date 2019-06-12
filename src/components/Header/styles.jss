@@ -9,4 +9,5 @@ Container.Inner = styled.div`
 `
 
 Container.Inner.Title = styled.h1`
+  text-align: center;
 `

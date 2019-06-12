@@ -3,16 +3,15 @@ import styled from '@emotion/styled'
 export const Container = styled.div`
   text-align: center;
   background-color: rgba(65, 25, 75, 0.4);
-  padding: 12px;
-  width: 40%;
-  min-width: 300px;
-  max-width: 600px;
-  display: inline-grid;
-  margin: 12px 2.5% 0 0;
 
-  &:nth-child(2n-1) {
-    margin: 12px 0 0 2.5%;
-    float: right;
+  @media screen and (max-width: 900px) {
+    padding: 16px;
+    margin: 16px 15%;
+  }
+  
+  @media screen and (max-width: 650px) {
+    padding: 12px;
+    margin: 12px 10%;
   }
 `
 
