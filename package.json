@@ -33,6 +33,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/css": "^10.0.12",
     "@emotion/styled": "^10.0.12",
+    "babel-plugin-emotion": "^10.0.13",
     "emotion": "^10.0.9",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

@@ -4,14 +4,26 @@ export const Container = styled.div`
   text-align: center;
   background-color: rgba(65, 25, 75, 0.4);
 
+  @media screen and (min-width: 901px) {
+    margin: 12px 0;
+    padding: 16px;
+    width: 45%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 30%;
+  }
+
   @media screen and (max-width: 900px) {
     padding: 16px;
-    margin: 16px 15%;
+    margin: 16px 0;
+    width: 80%;
   }
   
   @media screen and (max-width: 650px) {
     padding: 12px;
-    margin: 12px 10%;
+    margin: 12px 0;
+    width: 80%;
   }
 `
 

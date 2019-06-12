@@ -6,6 +6,9 @@ import Header from "./components/Header/Header"
 
 const Container = styled.div`
   margin: 12px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 `
 
 class App extends Component{
