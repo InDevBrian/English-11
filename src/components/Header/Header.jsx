@@ -10,6 +10,20 @@ class Header extends Component{
             Canadian Tuition Costs
           </Container.Inner.Title>
         </Container.Inner>
+        <Container.Lower>
+          <Container.Lower.Link>
+            One
+          </Container.Lower.Link>
+          <Container.Lower.Link>
+            Two
+          </Container.Lower.Link>
+          <Container.Lower.Link>
+            Three
+          </Container.Lower.Link>
+          <Container.Lower.Link>
+            Four
+          </Container.Lower.Link>
+        </Container.Lower>
       </Container>
     );
   }
