@@ -3,10 +3,14 @@ import {hot} from "react-hot-loader";
 import { Container, HeaderContainer } from './styles.jss'
 import Writeup from "./routes/Writeup/Writeup"
 import Interview from "./routes/Interview/Interview"
+import Book from "./routes/Book/Book"
+import Raw_Data from "./routes/Raw_Data/Raw_Data"
 
 const pages = [
   <Writeup />,
-  <Interview />
+  <Interview />,
+  <Book />,
+  <Raw_Data />
 ]
 class App extends Component{
   constructor() {
