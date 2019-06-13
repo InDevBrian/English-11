@@ -11,18 +11,18 @@ class Header extends Component{
           </Container.Inner.Title>
         </Container.Inner>
         <Container.Lower>
-          <Container.Lower.Link>
-            One
-          </Container.Lower.Link>
-          <Container.Lower.Link>
-            Two
-          </Container.Lower.Link>
-          <Container.Lower.Link>
-            Three
-          </Container.Lower.Link>
-          <Container.Lower.Link>
-            Four
-          </Container.Lower.Link>
+          <Container.Lower.Button onClick={this.props.updateContent}>
+            Writeup
+          </Container.Lower.Button>
+          <Container.Lower.Button>
+            Interview
+          </Container.Lower.Button>
+          <Container.Lower.Button>
+            Book
+          </Container.Lower.Button>
+          <Container.Lower.Button>
+            Raw Data
+          </Container.Lower.Button>
         </Container.Lower>
       </Container>
     );

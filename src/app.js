@@ -1,8 +1,9 @@
 import React, { Component} from "react";
 import {hot} from "react-hot-loader";
 import styled from '@emotion/styled'
-import Textbox from "./components/Textbox/Textbox"
 import Header from "./components/Header/Header"
+import Writeup from "./routes/Writeup/Writeup"
+import Interview from "./routes/Interview/Interview"
 
 const Container = styled.div`
   margin: 12px;
@@ -11,17 +12,27 @@ const Container = styled.div`
   justify-content: space-around;
 `
 
+const pages = [
+  <Writeup />,
+  <Interview />
+]
 class App extends Component{
+  constructor() {
+    super();
+    this.state = {
+      content: pages[0]
+    };
+  }
+
+  updateContent() {
+    this.setState({ content: pages[1] })
+  }
+
   render(){
     return(
       <Container>
-        <Header />
-        <Textbox />
-        <Textbox />
-        <Textbox />
-        <Textbox />
-        <Textbox />
-        <Textbox />
+        <Header updateContent={this.updateContent.bind(this)} />
+        {this.state.content}
       </Container>
     );
   }

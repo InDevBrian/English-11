@@ -23,7 +23,7 @@ Container.Lower = styled.div`
   justify-content: space-around;
 `
 
-Container.Lower.Link = styled.button`
+Container.Lower.Button = styled.button`
   text-align: center;
   color: #aff;
   font-size: 14px;
