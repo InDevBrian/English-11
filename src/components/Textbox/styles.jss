@@ -37,7 +37,7 @@ Container.Title = styled.h2`
 
 Container.Text = styled.p`
   font-size: 16px;
-  padding: 8px 0;
+  padding: 8px 5%;
   background-color: rgba(180, 180, 180, 0.4);
   border-radius: 8px;
 `

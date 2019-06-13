@@ -6,12 +6,10 @@ class Textbox extends Component{
     return(
       <Container>
         <Container.Title>
-          Text Box Title
+          {this.props.title}
         </Container.Title>
         <Container.Text>
-          Text!
-          <br />
-          More Text!
+          {this.props.content}
         </Container.Text>
       </Container>
     );
