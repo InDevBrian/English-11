@@ -12,16 +12,24 @@ const pages = [
   <Book />,
   <Raw_Data />
 ]
+
+const pageNames = [
+  "Writeup",
+  "Interview",
+  "Book",
+  "Raw Data"
+]
 class App extends Component{
   constructor() {
     super();
     this.state = {
-      content: pages[0]
+      content: pages[0],
+      pageName: pageNames[0]
     };
   }
 
   updateContent(num) {
-    this.setState({ content: pages[num] })
+    this.setState({ content: pages[num], pageName: pageNames[num] })
   }
 
   render(){
@@ -32,6 +40,9 @@ class App extends Component{
             <HeaderContainer.Inner.Title>
               Canadian Tuition Costs
             </HeaderContainer.Inner.Title>
+            <HeaderContainer.Inner.SubTitle>
+              {this.state.pageName}
+            </HeaderContainer.Inner.SubTitle>
           </HeaderContainer.Inner>
           <HeaderContainer.Lower>
             <HeaderContainer.Lower.Button onClick={() => this.updateContent(0)}>

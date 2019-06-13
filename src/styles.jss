@@ -21,6 +21,11 @@ HeaderContainer.Inner.Title = styled.h1`
   text-align: center;
 `
 
+HeaderContainer.Inner.SubTitle = styled.h3`
+  padding-top: 8px;
+  text-align: center;
+`
+
 HeaderContainer.Lower = styled.div`
   height: 40px;
   background-color: rgba(10, 10, 10, 0.4);
