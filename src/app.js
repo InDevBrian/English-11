@@ -1,16 +1,8 @@
 import React, { Component} from "react";
 import {hot} from "react-hot-loader";
-import styled from '@emotion/styled'
-import Header from "./components/Header/Header"
+import { Container, HeaderContainer } from './styles.jss'
 import Writeup from "./routes/Writeup/Writeup"
 import Interview from "./routes/Interview/Interview"
-
-const Container = styled.div`
-  margin: 12px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-`
 
 const pages = [
   <Writeup />,
@@ -24,14 +16,34 @@ class App extends Component{
     };
   }
 
-  updateContent() {
-    this.setState({ content: pages[1] })
+  updateContent(num) {
+    this.setState({ content: pages[num] })
   }
 
   render(){
     return(
       <Container>
-        <Header updateContent={this.updateContent.bind(this)} />
+        <HeaderContainer>
+          <HeaderContainer.Inner>
+            <HeaderContainer.Inner.Title>
+              Canadian Tuition Costs
+            </HeaderContainer.Inner.Title>
+          </HeaderContainer.Inner>
+          <HeaderContainer.Lower>
+            <HeaderContainer.Lower.Button onClick={() => this.updateContent(0)}>
+              Writeup
+            </HeaderContainer.Lower.Button>
+            <HeaderContainer.Lower.Button onClick={() => this.updateContent(1)}>
+              Interview
+            </HeaderContainer.Lower.Button>
+            <HeaderContainer.Lower.Button onClick={() => this.updateContent(2)}>
+              Book
+            </HeaderContainer.Lower.Button>
+            <HeaderContainer.Lower.Button onClick={() => this.updateContent(3)}>
+              Raw Data
+            </HeaderContainer.Lower.Button>
+          </HeaderContainer.Lower>
+        </HeaderContainer>
         {this.state.content}
       </Container>
     );

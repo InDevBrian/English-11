@@ -1,20 +1,27 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
+  margin: 12px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+`
+
+export const HeaderContainer = styled.div`
   background-color: rgba(23, 23, 23, 0.2);
   border-radius: 12px 12px 0 0;
   width: 100%;
 `
 
-Container.Inner = styled.div`
+HeaderContainer.Inner = styled.div`
   padding: 12px;
 `
 
-Container.Inner.Title = styled.h1`
+HeaderContainer.Inner.Title = styled.h1`
   text-align: center;
 `
 
-Container.Lower = styled.div`
+HeaderContainer.Lower = styled.div`
   height: 40px;
   background-color: rgba(10, 10, 10, 0.4);
   border-radius: 0 0 4px 4px;
@@ -23,7 +30,7 @@ Container.Lower = styled.div`
   justify-content: space-around;
 `
 
-Container.Lower.Button = styled.button`
+HeaderContainer.Lower.Button = styled.button`
   text-align: center;
   color: #aff;
   font-size: 14px;
