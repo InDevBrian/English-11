@@ -2,14 +2,17 @@ import styled from '@emotion/styled'
 
 export const Container = styled.div`
   text-align: center;
-  background-color: rgba(220, 135, 20, 0.6);
+  background-color: rgb(251, 188, 5);
   border-radius: 12px;
   width: 100%;
+  :nth-child(2n) {
+    background-color: rgb(0, 105, 237);
+  }
 
   @media screen and (min-width: 901px) {
     margin: 12px 0;
     padding: 16px;
-    width: 45%;
+    width: 43%;
   }
 
   @media screen and (max-width: 900px) {
@@ -26,13 +29,13 @@ export const Container = styled.div`
 Container.Title = styled.h2`
   margin-bottom: 8px;
   padding: 6px 0;
-  background-color: rgba(25, 25, 25, 0.4);
+  background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
 `
 
 Container.Text = styled.p`
   font-size: 16px;
   padding: 8px 5%;
-  background-color: rgba(25, 25, 25, 0.4);
+  background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
 `

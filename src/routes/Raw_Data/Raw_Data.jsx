@@ -13,9 +13,9 @@ class Raw_Data extends Component{
       <Fragment>
       <Textbox title={"Research Paragraph 1"} content={NotesParagraph1} />
       <Textbox title={"Research Paragraph 2"} content={NotesParagraph2} />
-      <Table title={"Title"} data={"uh oh"} />
       <Textbox title={"Video Script Body 1"} content={ScriptBody1} />
       <Textbox title={"Video Script Body 2"} content={ScriptBody2} />
+      <Table title={"Title"} data={"uh oh"} />
       </Fragment>
     );
   }

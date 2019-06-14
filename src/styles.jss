@@ -24,7 +24,7 @@ HeaderContainer.Inner.Title = styled.h1`
 HeaderContainer.Inner.SubTitle = styled.h3`
   padding-top: 8px;
   text-align: center;
-  color: rgb(201, 154, 34);
+  color: rgb(251, 188, 5);
 `
 
 HeaderContainer.Lower = styled.div`
@@ -41,7 +41,6 @@ HeaderContainer.Lower.Button = styled.button`
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background-color: rgba(0,0,0,0);
   border-radius: 4px;
   padding: 6px;
   margin: 6px 0;
