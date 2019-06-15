@@ -13,6 +13,8 @@ const NotesParagraph6 = "I don’t have any solid information yet, but a quick g
 const NotesParagraph7 = "aaaaaaaaaaaaa"
 const NotesParagraph8 = "aaaaaaaaaaaaa"
 const NotesParagraph9 = "aaaaaaaaaaaaa"
+const table1Headers = ["h1", "h2", "h3"]
+const table1Data = [["d11", "d12"], ["d21", "d22"], ["d31", "d32"]]
 
 class Raw_Data extends Component{
   render(){
@@ -26,7 +28,7 @@ class Raw_Data extends Component{
       <Textbox title={"Research Paragraph 6"} content={NotesParagraph6} />
       <Textbox title={"Video Script Body 1"} content={ScriptBody1} />
       <Textbox title={"Video Script Body 2"} content={ScriptBody2} />
-      <Table title={"Title"} data={"uh oh"} />
+      <Table title={"Title"} headers={table1Headers} data={table1Data} len={table1Data[0].length} />
       </Fragment>
     );
   }

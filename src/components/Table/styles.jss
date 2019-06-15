@@ -30,9 +30,28 @@ Container.Title = styled.h2`
   border-radius: 8px;
 `
 
-Container.Text = styled.p`
+Container.Table = styled.table`
+  width: 100%;
   font-size: 16px;
-  padding: 8px 5%;
+  padding: 8px;
+  border-collapse: collapse;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
+
+  tr {
+    border-bottom: 1px solid #666;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    th {
+      padding: 6px 3px;
+      font-size: 18px;
+    }
+
+    td {
+      padding: 4px 2px;
+    }
+  }
 `

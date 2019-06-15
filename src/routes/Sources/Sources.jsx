@@ -43,7 +43,7 @@ class Sources extends Component{
   tableContents() {
     let data = [];
     for (let i = 0; i < sources.length; i++) {
-      data[i] = <a href={sources[i]}><li>{sources[i]}</li></a>;
+      data[i] = <a href={sources[i]} key={i}><li>{sources[i]}</li></a>;
     }
     return data;
   }
@@ -51,9 +51,7 @@ class Sources extends Component{
   render(){
     return(
       <List cellSpacing={8}>
-        <tbody>
-          {this.tableContents()}
-        </tbody>
+        {this.tableContents()}
       </List>
     );
   }
