@@ -52,9 +52,20 @@ body {
 	margin: 0 calc((100% - 900px)/2);
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1060px) and (min-width: 600px) {
 	#root {
 		width: 90%;
 		margin: 0 5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#root {
+		width: 100%;
+		margin: 0;
+	}
+
+	body {
+		margin: 0;
 	}
 }

@@ -28,7 +28,7 @@ HeaderContainer.Inner.SubTitle = styled.h3`
 `
 
 HeaderContainer.Lower = styled.div`
-  height: 40px;
+  min-height: 40px;
   background-color: rgba(10, 10, 10, 0.4);
   border-radius: 0 0 4px 4px;
   display: flex;
@@ -43,7 +43,7 @@ HeaderContainer.Lower.Button = styled.button`
   text-decoration: none;
   border-radius: 4px;
   padding: 6px;
-  margin: 6px 0;
+  margin: 6px 4px;
 
   &:hover {
     transition: 50ms ease-in-out;

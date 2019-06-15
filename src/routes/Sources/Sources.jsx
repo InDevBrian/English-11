@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 const List = styled.ul`
   margin-top: 12px;
   list-style-type: none;
+  max-width: 100%;
 
   a {
     text-decoration: none;
