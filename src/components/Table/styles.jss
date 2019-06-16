@@ -9,12 +9,14 @@ export const Container = styled.div`
   @media screen and (min-width: 901px) {
     margin: 12px 0;
     padding: 16px;
-    width: 45%;
+    width: auto;
+    max-width: 93%;
   }
 
   @media screen and (max-width: 900px) {
     padding: 16px;
     margin: 16px 0;
+    width: auto;
   }
   
   @media screen and (max-width: 650px) {
@@ -48,10 +50,42 @@ Container.Table = styled.table`
     th {
       padding: 6px 3px;
       font-size: 18px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 11px;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 8px;
+      }
     }
 
     td {
       padding: 4px 2px;
+      
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 11px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 8px;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 6px;
+      }
     }
   }
 `

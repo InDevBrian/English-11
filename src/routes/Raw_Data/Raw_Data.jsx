@@ -13,8 +13,28 @@ const NotesParagraph6 = "I don’t have any solid information yet, but a quick g
 const NotesParagraph7 = "aaaaaaaaaaaaa"
 const NotesParagraph8 = "aaaaaaaaaaaaa"
 const NotesParagraph9 = "aaaaaaaaaaaaa"
-const table1Headers = ["h1", "h2", "h3"]
-const table1Data = [["d11", "d12"], ["d21", "d22"], ["d31", "d32"]]
+
+const table1Headers = [
+  "Level of Education",
+  "College",
+  "Bachelors",
+  "Masters",
+  "Doctorate",
+  ""
+]
+
+const table1Data = [
+  ["2000", "2005", "2010"],
+  ["$12,700  12%  20%", "$13,600  14%  23%", "$14,900  16%  36%"],
+  ["$20,500  33%  22%", "$22,800  37%  28%", "$26,300  41%  34%"],
+  ["$20,300  30%  27%", "$22,800  35%  32%", "$26,600  41%  44%"],
+  ["$23,900  35%  27%", "$25,600  39%  30%", "$41,100  49%  36%"],
+  [
+    "$ = Average Debt for those that haven’t paid off at time of graduation",
+    "1st % = Percent of graduates with 25k+ at time of graduation",
+    "2nd % = Percent who had paid off all student loans at time of interview"
+  ]
+]
 
 class Raw_Data extends Component{
   render(){
