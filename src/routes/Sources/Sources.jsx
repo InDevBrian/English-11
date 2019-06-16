@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 const List = styled.ul`
   margin-top: 12px;
   list-style-type: none;
-  max-width: 100%;
+  width: 100%;
 
   a {
     text-decoration: none;
@@ -21,6 +21,14 @@ const List = styled.ul`
     border-radius: 8px;
     font-size: 16px;
     color: white;
+
+    @media screen and (max-width: 520px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 8px;
+    }
   }
 `
 
