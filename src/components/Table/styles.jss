@@ -27,7 +27,7 @@ export const Container = styled.div`
 
 Container.Title = styled.h2`
   margin-bottom: 8px;
-  padding: 6px 0;
+  padding: 6px 12px;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
 `

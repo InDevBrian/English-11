@@ -36,19 +36,32 @@ const table1Data = [
   ]
 ]
 
+const table2Headers = [
+  "Province",
+  "Undergraduate",
+  "Graduate"  
+]
+
+const table2Data = [
+  ["Canada", "Newfoundland and Labrador", "Prince Edward Island", "Nova Scotia", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan", "Alberta", "British Columbia"],
+  ["3.3", "2.3", "2.0", "5.6", "2.9", "2.8", "3.7", "6.5", "3.7", "0.1", "2.0"],
+  ["2.4", "0.0", "-0.8", "3.2", "2.3", "2.8", "2.5", "6.5", "5.6", "0.0", "2.0"]
+]
+
 class Raw_Data extends Component{
   render(){
     return(
       <Fragment>
       <Textbox title={"Research Paragraph 1"} content={NotesParagraph1} />
       <Textbox title={"Research Paragraph 2"} content={NotesParagraph2} />
+      <Table title={"Education Debt Over 15 Years"} headers={table1Headers} data={table1Data} len={table1Data[0].length} />
       <Textbox title={"Research Paragraph 3"} content={NotesParagraph3} />
       <Textbox title={"Research Paragraph 4"} content={NotesParagraph4} />
       <Textbox title={"Research Paragraph 5"} content={NotesParagraph5} />
       <Textbox title={"Research Paragraph 6"} content={NotesParagraph6} />
+      <Table title={"Tuition Increase by Percent from 2018 to 2019"} headers={table2Headers} data={table2Data} len={table2Data[0].length} />
       <Textbox title={"Video Script Body 1"} content={ScriptBody1} />
       <Textbox title={"Video Script Body 2"} content={ScriptBody2} />
-      <Table title={"Title"} headers={table1Headers} data={table1Data} len={table1Data[0].length} />
       </Fragment>
     );
   }
