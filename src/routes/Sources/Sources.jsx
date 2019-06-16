@@ -27,7 +27,7 @@ const List = styled.ul`
     }
 
     @media screen and (max-width: 400px) {
-      font-size: 8px;
+      font-size: 11px;
     }
   }
 `
