@@ -131,6 +131,7 @@ class Raw_Data extends Component{
       <Textbox title={"Dragons Den Pitch Paragraph 3"} content={NotesParagraph9} />
       <Textbox title={"Dragons Den Pitch Paragraph 4"} content={NotesParagraph10} />
       <Textbox title={"Dragons Den Pitch Paragraph 5"} content={NotesParagraph11} />
+      <embed src="http://www.rbc.com/economics/economic-reports/pdf/other-reports/Tuition_June2018.pdf" type="application/pdf" width="auto" height="auto" />
       </Fragment>
     );
   }

@@ -22,6 +22,7 @@ class Writeup extends Component{
       <Textbox title={"The Current Changes"} content={changes} />
       <Textbox title={"Loans"} content={laons} />
       <Textbox title={"Co-op"} content={coop} />
+      <div><img src="https://drive.google.com/uc?id=1l7bAqaKO4ydeGV49NHbecxZQvJmix8th" /></div>
       </Fragment>
     );
   }
