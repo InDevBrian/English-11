@@ -6,7 +6,7 @@ const ScriptBody1 = "56% of Canadians between 25 and 64 have completed some kind
 const Transition1 = "Isn't our education great? Well getting back into paying for everything just to go to school. You may have very supportive parents who will help sort out paying for things like housing, food, school, and what not, but not everyones parents are in the financial position to pay for that much stuff. So they're left with only being able to help out a little bit, or not at all, leaving the student with the only option of taking out some student loans. Unfortunatley, because of the extremely high, and ever rising costs of attending post-secondary schools, many Canadians have taken out very large loans, and gone very far into debt."
 const ScriptBody2 = "So lots of people going to school is a good thing, but it's also raised the bar for entry, because the demand to get in is quite high, and it can be quite difficult to get into many schools across our country, especially some of the higher rated schools. In order to pay for these schools, and the costs associated with living in Canada, Canadians are taking out extremely large loans that compounds into debt that takes decades for the students to pay off. All this debt is damaging to the financial state of our younger workforce."
 
-class Interview extends Component{
+class Writeup extends Component{
   render(){
     return(
       <Fragment>
@@ -19,4 +19,4 @@ class Interview extends Component{
   }
 }
 
-export default Interview;
+export default Writeup;
