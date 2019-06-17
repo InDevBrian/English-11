@@ -31,11 +31,34 @@ Container.Title = styled.h2`
   padding: 6px 0;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
+
+  @media screen and (min-width: 901px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 22px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+  }
 `
 
 Container.Text = styled.p`
-  font-size: 16px;
   padding: 8px 5%;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
+
+  @media screen and (min-width: 901px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    font-size: 10px;
+  }
 `

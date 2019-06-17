@@ -30,6 +30,18 @@ Container.Title = styled.h2`
   padding: 6px 12px;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 8px;
+
+  @media screen and (min-width: 901px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 22px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+  }
 `
 
 Container.Table = styled.table`
