@@ -45,7 +45,8 @@ const sources = [
   "https://news.vice.com/en_ca/article/d3xmdm/the-state-of-student-debt-in-canada",
   "http://augustanafreepress.ca/2015/10/13/youth-underemployment-a-major-concern-f/",
   "http://www.rbc.com/economics/economic-reports/pdf/other-reports/Tuition_June2018.pdf",
-  "https://library.queensu.ca/madgic/free/education_tables/Tuition-data_revised/historical/Table%208E_Combined.xlsx"
+  "https://library.queensu.ca/madgic/free/education_tables/Tuition-data_revised/historical/Table%208E_Combined.xlsx",
+  "https://www.inflation.eu/inflation-rates/canada/historic-inflation/cpi-inflation-canada.aspx"
 ]
 
 class Sources extends Component{
