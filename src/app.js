@@ -5,10 +5,12 @@ import Writeup from "./routes/Writeup/Writeup"
 import Book from "./routes/Book/Book"
 import Raw_Data from "./routes/Raw_Data/Raw_Data"
 import Sources from "./routes/Sources/Sources"
+import Interview from "./routes/Interview/Interview.jsx"
 
 const pages = [
   <Writeup />,
   <Book />,
+  <Interview />,
   <Raw_Data />,
   <Sources />
 ]
@@ -16,6 +18,7 @@ const pages = [
 const pageNames = [
   "Writeup",
   "Book",
+  "Interview",
   "Raw Data",
   "Sources"
 ]
@@ -52,9 +55,12 @@ class App extends Component{
               Book
             </HeaderContainer.Lower.Button>
             <HeaderContainer.Lower.Button onClick={() => this.updateContent(2)}>
-              Raw Data
+              Interview
             </HeaderContainer.Lower.Button>
             <HeaderContainer.Lower.Button onClick={() => this.updateContent(3)}>
+              Raw Data
+            </HeaderContainer.Lower.Button>
+            <HeaderContainer.Lower.Button onClick={() => this.updateContent(4)}>
               Sources
             </HeaderContainer.Lower.Button>
           </HeaderContainer.Lower>
