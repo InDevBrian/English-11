@@ -52,7 +52,7 @@ class Interview extends Component{
   tableContents() {
     let data = [];
     for (let i = 0; i < questions.length; i++) {
-      data[i] = <a href={questions[i]} key={i}><li>{questions[i]}</li></a>;
+      data[i] = <a key={i}><li>{questions[i]}</li></a>;
     }
     return data;
   }
